@@ -19,7 +19,7 @@ The first command sets up a data container named `data` which will hold the conf
 ## Available Tags
 
 * `latest`: Currently Couchbase 4.1.0 Enterprise
-* `2.8`: Couchbase 4.1.0 Enterprise
+* `4.1`: Couchbase 4.1.0 Enterprise
 
 ## Deployment
 
