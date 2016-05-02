@@ -6,6 +6,7 @@ CB_REST_USERNAME=${USERNAME:-aptible}
 CB_REST_PASSWORD=${PASSPHRASE}
 
 ARGUMENT_FILE="$CONFIG_DIRECTORY/cluster-init.args"
+LOG_FILE=/opt/couchbase/var/lib/couchbase/logs/debug.log
 
 wait_for_cluster() {
   for i in $(seq 10 -1 0); do
@@ -87,5 +88,6 @@ EOM
 
 else
   cb_run_server
+  tail -F $LOG_FILE
 
 fi
